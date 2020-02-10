@@ -1,0 +1,18 @@
+text {
+  fill: gainsboro;
+  font-size: .7em;
+  pointer-events: none ;
+}
+
+.selected-tile {
+  @include path(red, 2, none, .82);
+}
+
+.unselected-tile {
+  @include path(#303030, 0, 7, 1);
+  &:hover {
+    cursor: pointer;
+    @include path(maroon, 2, none, .75)
+  }
+  
+}

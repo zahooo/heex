@@ -1,0 +1,36 @@
+@mixin link-colors ($link, $visited, $hover, $active) {
+  &:link {
+    text-decoration: none;
+    color: $link;
+  }
+  &:visited {
+    color: $visited;
+  }
+  &:hover {
+    color: $hover;
+  }
+  &:active {
+    color: $active;
+  }
+}
+
+@mixin button ($color, $bg-color, $border-color, $font-weight, $underline, $cursor) {
+  margin: 0 .3em;
+  padding: .1em;
+  color: $color;
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  font-weight: $font-weight;
+  &:hover {
+    text-decoration: $underline;
+    cursor: $cursor;
+  }
+}
+
+@mixin path($stroke, $stroke-width, $stroke-dasharray, $opacity) {
+  pointer-events: visibleFill;
+  stroke: $stroke;
+  stroke-width: $stroke-width;
+  stroke-dasharray: $stroke-dasharray;
+  opacity: $opacity;
+}

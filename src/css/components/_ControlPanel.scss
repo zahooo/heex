@@ -1,0 +1,8 @@
+button {
+  &:enabled {
+    background-color: darkcyan;
+  }
+  &:disabled {
+    background-color: brown;
+  }
+}

@@ -1,0 +1,59 @@
+// import basic helper files
+
+@import 'helper/mixins';
+@import 'helper/placeholders';
+@import 'helper/variables';
+@import 'helper/reset';
+
+// import components
+
+@import 'components/Tile';
+@import 'components/ControlPanel';
+
+// import fonts etc.
+
+// ===================================================== //
+
+//basic body layout
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: $text-primary;
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+
+.link-primary {
+  @include link-colors ($text-link, $text-link, $text-hover, $text-hover)
+}
+
+.button-primary {
+  @include button ($text-primary, $bg-primary, $border-primary, bold, underline, pointer)
+}
+
+button {
+  color: $text-primary;
+  background-color: $bg-primary;
+}
+
+svg {
+  border: 4px double darkslateblue;
+  background-color:hsl(60, 24%, 45%);
+  overflow:auto;
+}
+
+select {
+  color: black;
+  background-color: blue;
+}
+
+
+// basic mobile layout
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 98%;
+  }
+}

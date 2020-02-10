@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  font-family: "Courier New", Courier, monospace;
+  color: #ededed;
+}
+
+html {
+  background-color: #151515;
+}
+
+text {
+  fill: gainsboro;
+  font-size: 0.7em;
+  pointer-events: none;
+}
+
+.selected-tile {
+  pointer-events: visibleFill;
+  stroke: red;
+  stroke-width: 2;
+  stroke-dasharray: none;
+  opacity: 0.82;
+}
+
+.unselected-tile {
+  pointer-events: visibleFill;
+  stroke: #303030;
+  stroke-width: 0;
+  stroke-dasharray: 7;
+  opacity: 1;
+}
+.unselected-tile:hover {
+  cursor: pointer;
+  pointer-events: visibleFill;
+  stroke: maroon;
+  stroke-width: 2;
+  stroke-dasharray: none;
+  opacity: 0.75;
+}
+
+button:enabled {
+  background-color: darkcyan;
+}
+button:disabled {
+  background-color: brown;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #1c1c3b;
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+
+.link-primary:link {
+  text-decoration: none;
+  color: #3b1c1c;
+}
+.link-primary:visited {
+  color: #3b1c1c;
+}
+.link-primary:hover {
+  color: #1c3b1c;
+}
+.link-primary:active {
+  color: #1c3b1c;
+}
+
+.button-primary {
+  margin: 0 0.3em;
+  padding: 0.1em;
+  color: #1c1c3b;
+  background-color: #ededed;
+  border: 1px solid #404040;
+  font-weight: bold;
+}
+.button-primary:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button {
+  color: #1c1c3b;
+  background-color: #ededed;
+}
+
+svg {
+  border: 4px double darkslateblue;
+  background-color: #8e8e57;
+  overflow: auto;
+}
+
+select {
+  color: black;
+  background-color: blue;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 98%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
